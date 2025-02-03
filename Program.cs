@@ -53,8 +53,6 @@ app.UseAuthorization();
 // Add anti-forgery middleware
 app.UseAntiforgery();
 
-app.MapGet("/health", () => Results.Ok("Healthy"));
-
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
