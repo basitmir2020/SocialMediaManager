@@ -1,8 +1,8 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 USER $APP_UID
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 8000
+EXPOSE 8001
 
 HEALTHCHECK CMD curl --fail http://localhost:8000/health || exit 1
 
