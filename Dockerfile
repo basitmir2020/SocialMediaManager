@@ -4,6 +4,9 @@ WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
+# Create a non-root user
+RUN adduser --disabled-password --gecos "" myuser
+
 # Use the .NET SDK image for building the application
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
@@ -22,4 +25,8 @@ RUN dotnet publish "SocialMediaAutoPosterApp.csproj" -c $BUILD_CONFIGURATION -o 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+# Switch to non-root user
+USER myuser
+
 ENTRYPOINT ["dotnet", "SocialMediaAutoPosterApp.dll"]
