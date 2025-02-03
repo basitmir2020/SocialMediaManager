@@ -1,0 +1,47 @@
+﻿@page "/login"
+@layout AuthLayout
+<div class="pt-4 pb-2">
+    <MudText Typo="Typo.h5" Class="card-title text-center pb-0 fs-4">Login to Your Account</MudText>
+</div>
+
+<form class="row g-3 needs-validation" novalidate>
+
+    <div class="col-12">
+        <MudTextField 
+            @bind-Value="_loginModel.Username"
+            Label="Username"
+            For="@(() => _loginModel.Username)"
+            Variant="Variant.Outlined"
+            FullWidth
+            Class="mb-2 form-control" />
+    </div>
+
+    <div class="col-12">
+        <MudTextField @bind-Value="_loginModel.Password"
+                      Label="Password"
+                      For="@(() => _loginModel.Password)"
+                      Variant="Variant.Outlined"
+                      InputType="InputType.Password"
+                      FullWidth
+                      Class="form-control"/>
+    </div>
+
+    @*<div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+    </div>*@
+    <div class="col-12">
+        <MudButton ButtonType="ButtonType.Submit"
+                   Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   FullWidth
+                   Class="mt-4 btn w-100">
+            Login
+        </MudButton>
+    </div>
+    <div class="col-12">
+        <p class="small mb-0">Don't have account? <a href="/Register">Create an account</a></p>
+    </div>
+</form>

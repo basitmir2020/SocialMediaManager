@@ -1,0 +1,13 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+@inject NavigationManager Navigation
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Redirect to the login page when the app starts
+        Navigation.NavigateTo("/login", forceLoad: true);
+    }
+}
