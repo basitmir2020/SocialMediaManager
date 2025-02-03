@@ -54,3 +54,76 @@ Built with cutting-edge technologies like **ASP.NET Core**, **Entity Framework C
    ```bash
    git clone https://github.com/your-username/SocialMediaAutoPosterApp.git
    cd SocialMediaAutoPosterApp
+   ```
+2. **Restore NuGet Packages**:
+   ```bash
+   dotnet restore
+   ```
+3. **Set Up the Database**:
+   - Update the ```appsettings.json``` file with your SQL Server connection string:
+   ```bash
+   "ConnectionStrings": {
+       "DefaultConnection": "Server=localhost,1433;Database=SocialMediaAutoPoster;User Id=sa;Password=password@1234;TrustServerCertificate=True;"
+   }
+   ```
+4. **Run Database Migrations**:
+   ```bash
+   dotnet ef database update
+   ```
+5. **Run the Application**:
+   ```bash
+   dotnet run
+   ```
+   - Alternatively, run the application in **Visual Studio** or **Rider** by pressing ```F5```.
+
+6. **Access the Application**:
+   - Open your browser and navigate to ```http://localhost:5000```.
+---
+## 🐳 Docker Support (Optional)
+You can containerize the application for easy deployment:
+1. **Build the Docker Image**:
+   ```bash
+   docker build -t socialmediaautoposterapp .
+   ```
+2. **Run the Docker Container**:
+   ```bash
+   docker run -d -p 5000:80 socialmediaautoposterapp
+   ```
+3. **Access the Application**:
+   - Open your browser and navigate to ```http://localhost:5000```.
+---
+## 📂 Directory Structure
+   ```
+      SocialMediaAutoPosterApp/
+      │
+      ├── Data/
+      │   ├── Contexts/
+      │   │   └── ApplicationDbContext.cs
+      │   ├── Migrations/
+      │   └── DbInitializer.cs
+      │
+      ├── Models/
+      │   ├── Agency.cs
+      │   ├── Client.cs
+      │   ├── ApplicationUser.cs
+      │   ├── ApplicationRole.cs
+      │   └── ... (other models)
+      │
+      ├── Pages/
+      │   ├── Auth/
+      │   │   ├── AuthLogin.razor
+      │   │   └── AuthRegister.razor
+      │   ├── Dashboard/
+      │   ├── SocialMedia/
+      │   └── ... (other pages)
+      │
+      ├── wwwroot/
+      │   ├── css/
+      │   ├── js/
+      │   └── ... (static files)
+      │
+      ├── appsettings.json
+      ├── Program.cs
+      ├── Startup.cs
+      └── SocialMediaAutoPosterApp.csproj
+   ```
