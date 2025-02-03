@@ -656,3 +656,4 @@ C:\Users\basit\Desktop\SocialMediaAutoPosterApp\obj\Debug\net9.0\scopedcss\Compo
 C:\Users\basit\Desktop\SocialMediaAutoPosterApp\obj\Debug\net9.0\compressed\erp5jzz0ya-ljplvmq8gy.gz
 C:\Users\basit\Desktop\SocialMediaAutoPosterApp\obj\Debug\net9.0\compressed\zq5yrpenof-t1axwp2lic.gz
 C:\Users\basit\Desktop\SocialMediaAutoPosterApp\obj\Debug\net9.0\compressed\2zstmd2uko-t1axwp2lic.gz
+C:\Users\basit\Desktop\SocialMediaAutoPosterApp\obj\Debug\net9.0\SocialMediaAutoPosterApp.sourcelink.json

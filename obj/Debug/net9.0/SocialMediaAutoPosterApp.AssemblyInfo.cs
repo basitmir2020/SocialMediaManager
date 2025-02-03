@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocialMediaAutoPosterApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6df4edcac4f953c35c2aba73e9eb962a0a16f346")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocialMediaAutoPosterApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocialMediaAutoPosterApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
