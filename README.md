@@ -54,37 +54,3 @@ Built with cutting-edge technologies like **ASP.NET Core**, **Entity Framework C
    ```bash
    git clone https://github.com/your-username/SocialMediaAutoPosterApp.git
    cd SocialMediaAutoPosterApp
-
-### **Directory Structure**
-SocialMediaAutoPosterApp/
-│
-├── Data/
-│   ├── Contexts/
-│   │   └── ApplicationDbContext.cs
-│   ├── Migrations/
-│   └── DbInitializer.cs
-│
-├── Models/
-│   ├── Agency.cs
-│   ├── Client.cs
-│   ├── ApplicationUser.cs
-│   ├── ApplicationRole.cs
-│   └── ... (other models)
-│
-├── Pages/
-│   ├── Auth/
-│   │   ├── AuthLogin.razor
-│   │   └── AuthRegister.razor
-│   ├── Dashboard/
-│   ├── SocialMedia/
-│   └── ... (other pages)
-│
-├── wwwroot/
-│   ├── css/
-│   ├── js/
-│   └── ... (static files)
-│
-├── appsettings.json
-├── Program.cs
-├── Startup.cs
-└── SocialMediaAutoPosterApp.csproj
