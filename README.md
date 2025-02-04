@@ -52,8 +52,9 @@ Built with cutting-edge technologies like **ASP.NET Core**, **Entity Framework C
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/SocialMediaAutoPosterApp.git
-   cd SocialMediaAutoPosterApp
+      git clone https://github.com/your-username/SocialMediaAutoPosterApp.git
+    
+      cd SocialMediaAutoPosterApp
    ```
 2. **Restore NuGet Packages**:
    ```bash
@@ -61,6 +62,7 @@ Built with cutting-edge technologies like **ASP.NET Core**, **Entity Framework C
    ```
 3. **Set Up the Database**:
    - Update the ```appsettings.json``` file with your SQL Server connection string:
+   
    ```bash
    "ConnectionStrings": {
        "DefaultConnection": "Server=localhost,1433;Database=SocialMediaAutoPoster;User Id=sa;Password=password@1234;TrustServerCertificate=True;"
